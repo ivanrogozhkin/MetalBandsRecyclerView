@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MetalBandsRecyclerView</string>
+    <string name="add_band">Add band</string>
+    <string name="darkthrone">Darkthrone</string>
+</resources>
