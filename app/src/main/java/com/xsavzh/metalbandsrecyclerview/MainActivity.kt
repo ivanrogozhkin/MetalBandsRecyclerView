@@ -22,11 +22,11 @@ class MainActivity : AppCompatActivity() {
         init()
 
         editLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-            adapter.addBand(it.data?.getSerializableExtra("band") as Band)
+            adapter.addBand(it.data!!.getSerializableExtra("band") as Band)
         }
     }
 
-    fun init() = with(binding) {
+    private fun init() = with(binding) {
         recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
         recyclerView.adapter = adapter
         addBandButton.setOnClickListener {

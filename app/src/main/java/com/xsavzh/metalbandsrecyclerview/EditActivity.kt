@@ -28,16 +28,17 @@ class EditActivity : AppCompatActivity() {
     }
 
     private fun initButtons() = with(binding) {
+
         nextPicButton.setOnClickListener {
             imageIndex++
-            if (imageId > imageList.size - 1) imageIndex = 0
+            if (imageIndex > imageList.size - 1) imageIndex = 0
             imageId = imageList[imageIndex]
             bandImageView.setImageResource(imageId)
         }
 
         prevPicButton.setOnClickListener {
             imageIndex--
-            if (imageId < 0) imageIndex = imageList.size - 1
+            if (imageIndex < 0) imageIndex = imageList.size - 1
             imageId = imageList[imageIndex]
             bandImageView.setImageResource(imageId)
         }
