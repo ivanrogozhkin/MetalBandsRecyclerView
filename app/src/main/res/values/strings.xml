@@ -2,4 +2,7 @@
     <string name="app_name">MetalBandsRecyclerView</string>
     <string name="add_band">Add band</string>
     <string name="darkthrone">Darkthrone</string>
+    <string name="band">Band</string>
+    <string name="title">Title</string>
+    <string name="done">Done</string>
 </resources>

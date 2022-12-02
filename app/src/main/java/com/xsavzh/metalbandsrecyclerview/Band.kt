@@ -1,3 +1,3 @@
 package com.xsavzh.metalbandsrecyclerview
 
-data class Band(val imageId: Int, val title: String)
+data class Band(val imageId: Int, val title: String) : java.io.Serializable
